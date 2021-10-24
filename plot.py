@@ -5,12 +5,10 @@ import matplotlib.pyplot as plt
 
 x= np.arange(-10,10,0.1)
 y = norm.pdf(x)
-dictionary = {}
 for i in range(len(x)):
     if x[i]<0:
         y[i]=0
 
-print(x,y)
 plt.plot(x, y)
 
 plt.show()
